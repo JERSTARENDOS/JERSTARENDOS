@@ -2,7 +2,7 @@
 - 👀 I’m interested in website designing
 - 🌱 I’m currently learning JSON
 - 💞️ I’m looking to collaborate on companes
-- 📫 How to reach me 08067400604  whatsapp
+- 📫 How to reach me at ekpajeremiah@gmail.com
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 
