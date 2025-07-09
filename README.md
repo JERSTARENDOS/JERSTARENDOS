@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @JERSTARENDOS
-- 👀 I’m interested in website designing
-- 🌱 I’m currently learning JSON
-- 💞️ I’m looking to collaborate on companes
+- 👀 I’m interested in Full Stack Developing
+- 🌱 I’m currently intact with more than 8 programming languages 
+- 💞️ I’m looking to work diligently with companes
 - 📫 How to reach me at ekpajeremiah@gmail.com
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
