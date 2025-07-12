@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @JERSTARENDOS
-- 👀 I’m interested in Full Stack Developing
+- 👀 I’m interested in Full Stack Developer
 - 🌱 I’m currently intact with more than 8 programming languages 
 - 💞️ I’m looking to work diligently with companes
 - 📫 How to reach me at ekpajeremiah@gmail.com
