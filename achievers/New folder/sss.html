@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- // element.addEventlister("event", function(){}) -->
+
+    <button id="myBtn">Click me</button>
+
+    <p id="text">Hover me now!!!!</p>
+
+
+
+    <input type="text" id="inputBox" placeholder="type in me">
+    <p id="display"></p>
+
+    <script>
+        let btn = document.getElementById("myBtn")
+        btn.addEventListener("click", function(){
+            alert("Button clicked!");
+        });
+
+        //event 2
+        let text = document.getElementById("text");
+        text.addEventListener("mouseover", function(){ 
+            text.style.color = "red";
+        });
+
+        text.addEventListener("mouseout", function(){
+            text.style.color = "black";
+        });
+
+        //key press
+        const input = document.getElementById("inputBox")
+        const display = document.getElementById("display")
+
+        input.addEventListener("input", function() {
+            display.textContent = input.value
+        })
+    </script>
+</body>
+</html>
