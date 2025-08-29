@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerry</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b"/>
+      <stop offset="100%" style="stop-color:#4ecdc4"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="url(#bgGrad)"/>
+  
+  <!-- Movie film strip elements -->
+  <rect x="4" y="8" width="56" height="4" fill="url(#logoGrad)" opacity="0.3"/>
+  <rect x="4" y="52" width="56" height="4" fill="url(#logoGrad)" opacity="0.3"/>
+  
+  <!-- Film strip holes -->
+  <circle cx="8" cy="10" r="1.5" fill="#0a0a0a"/>
+  <circle cx="16" cy="10" r="1.5" fill="#0a0a0a"/>
+  <circle cx="24" cy="10" r="1.5" fill="#0a0a0a"/>
+  <circle cx="32" cy="10" r="1.5" fill="#0a0a0a"/>
+  <circle cx="40" cy="10" r="1.5" fill="#0a0a0a"/>
+  <circle cx="48" cy="10" r="1.5" fill="#0a0a0a"/>
+  <circle cx="56" cy="10" r="1.5" fill="#0a0a0a"/>
+  
+  <circle cx="8" cy="54" r="1.5" fill="#0a0a0a"/>
+  <circle cx="16" cy="54" r="1.5" fill="#0a0a0a"/>
+  <circle cx="24" cy="54" r="1.5" fill="#0a0a0a"/>
+  <circle cx="32" cy="54" r="1.5" fill="#0a0a0a"/>
+  <circle cx="40" cy="54" r="1.5" fill="#0a0a0a"/>
+  <circle cx="48" cy="54" r="1.5" fill="#0a0a0a"/>
+  <circle cx="56" cy="54" r="1.5" fill="#0a0a0a"/>
+  
+  <!-- Main "J" letter -->
+  <text x="32" y="45" text-anchor="middle" fill="url(#logoGrad)" font-family="Arial, sans-serif" font-weight="bold" font-size="32" style="filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));">J</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="50" cy="20" r="2" fill="url(#logoGrad)" opacity="0.4"/>
+  <circle cx="14" cy="42" r="1.5" fill="url(#logoGrad)" opacity="0.6"/>
+  <circle cx="52" cy="38" r="1" fill="#4ecdc4" opacity="0.8"/>
+</svg>">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#ff6b6b">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Jerry - Your gateway to unlimited movies and TV shows. Discover trending content, explore genres, and find your next favorite film.">
+    <meta name="keywords" content="movies, tv shows, streaming, entertainment, Jerry, cinema, films">
+    <meta name="author" content="Jerry">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Jerry - Unlimited Movies & TV Shows">
+    <meta property="og:description" content="Discover trending content from around the world. Your gateway to endless entertainment.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jerry - Unlimited Movies & TV Shows">
+    <meta name="twitter:description" content="Discover trending content from around the world.">
+    <meta name="twitter:image" content="og-image.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo" onclick="goHome()" style="cursor: pointer;">Jerry</div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="filterMovies('all'); closeMobileMenu()">Home</a></li>
+                <li><a href="#" onclick="filterMovies('movies'); closeMobileMenu()">Movies</a></li>
+                <li><a href="#" onclick="filterMovies('series'); closeMobileMenu()">TV Series</a></li>
+                <li><a href="#" onclick="filterMovies('trending'); closeMobileMenu()">Trending</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search movies..." 
+                       oninput="searchMovies(this.value)">
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Unlimited Movies & TV Shows</h1>
+                <p>Watch anywhere. Cancel anytime.</p>
+                <button class="cta-button" onclick="showModal('Welcome to Jerry')">
+                    Start Watching
+                </button>
+            </div>
+        </section>
+
+        <div class="categories">
+            <button class="category-btn active" onclick="filterMovies('all')">All</button>
+            <button class="category-btn" onclick="filterMovies('action')">Action</button>
+            <button class="category-btn" onclick="filterMovies('comedy')">Comedy</button>
+            <button class="category-btn" onclick="filterMovies('drama')">Drama</button>
+            <button class="category-btn" onclick="filterMovies('horror')">Horror</button>
+            <button class="category-btn" onclick="filterMovies('sci-fi')">Sci-Fi</button>
+        </div>
+
+        <section class="section">
+            <h2>Featured Movies</h2>
+            <div class="movie-grid" id="movieGrid">
+                <!-- Movies will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <h3 id="modalTitle">Movie Details</h3>
+            <p id="modalContent">Movie information will appear here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

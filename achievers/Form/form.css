@@ -1,0 +1,61 @@
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+#loginForm {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Reduced from 1.2rem to 0.5rem */
+}
+#loginForm label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.3rem;
+}
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 8px;
+    background: #f1f1f1;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+#loginForm input:focus {
+    background: #e0e7ff;
+    outline: none;
+}
+#loginForm button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    margin-top: 0.5rem;
+}
+#loginForm button:active {
+    transform: scale(0.97);
+}
+#loginForm button:disabled {
+    background: #bbb;
+    cursor: not-allowed;
+}
+#message {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    min-height: 1.2em;
+}
