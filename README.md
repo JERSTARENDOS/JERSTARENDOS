@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @JERSTARENDOS
+- 👋 Hi, I’m Ekpa Jeremiah
 - 👀 I’m interested in Full Stack Developer
 - 🌱 I’m currently intact with more than 8 programming languages 
 - 💞️ I’m looking to work diligently with companes
